@@ -1,6 +1,8 @@
 ---
 - name: "Apache installation using docker"
   hosts: Prod
+  vars_files:
+    - files/secrets/credentials.yml
   become: true
   vars:
   pre_tasks:
